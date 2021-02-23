@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Visibility</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      html {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #34495e;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.5)
+        );
+        margin: 1em auto;
+        max-width: 40em;
+        height: 100vh;
+        width: 88%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #efefef;
+        font-family: "Lato", sans-serif;
+      }
+
+      .wrapper {
+        border: 1px solid #efefef;
+        padding: 1.2rem 3rem;
+        border-radius: 30px;
+      }
+
+      label {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.4rem;
+      }
+
+      .input {
+        width: 50%;
+        margin-bottom: 1em;
+        border-radius: 20px;
+        padding: 0.3rem 0.6rem;
+        border: none;
+        font-family: inherit;
+        border: 3px solid transparent;
+        transition: all 0.2s;
+      }
+
+      .input:focus {
+        outline: none;
+        border: 3px solid #27ae60;
+        outline-offset: 0px;
+      }
+
+      [type="checkbox"] {
+        margin-bottom: 0;
+        margin-right: 0.25em;
+      }
+
+      button {
+        border-radius: 20px;
+        padding: 0.4rem 1.6rem;
+        font-size: 16px;
+        font-family: inherit;
+        border: none;
+        transition: all 0.2s;
+      }
+
+      button:focus {
+        background-color: #27ae60;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Password Visibility</h1>
+
+      <p>Enter your username and password to login.</p>
+
+      <form>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="input" />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="input" />
+        </div>
+
+        <div>
+          <label for="show-password">
+            <input type="checkbox" name="show-passwords" id="show-password" />
+            Show password
+          </label>
+        </div>
+
+        <p>
+          <button type="submit">Log In</button>
+        </p>
+      </form>
+    </div>
+
+    <script>
+      const passwordToggle = document.querySelector("#show-password");
+      const passwordInput = document.querySelector("#password");
+
+      passwordToggle.addEventListener("change", function () {
+        passwordToggle.checked
+          ? (passwordInput.type = "text")
+          : (passwordInput.type = "password");
+      });
+    </script>
+  </body>
+</html>
