@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Visibility - Multiple Fields</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./day2.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Password Visibility</h1>
+      <p>Enter your current password and new password below.</p>
+
+      <form>
+        <div>
+          <label for="current-password">Current Password</label>
+          <input
+            type="password"
+            name="current-password"
+            id="current-password"
+          />
+        </div>
+
+        <div>
+          <label for="new-password">New Password</label>
+          <input type="password" name="new-password" id="new-password" />
+        </div>
+
+        <div>
+          <label for="show-passwords">
+            <input type="checkbox" name="show-passwords" id="show-passwords" />
+            Show passwords
+          </label>
+        </div>
+
+        <p>
+          <button type="submit">Change Passwords</button>
+        </p>
+      </form>
+    </div>
+
+    <script src="./day2.js">
+    </script>
+  </body>
+</html>

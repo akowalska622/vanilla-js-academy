@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Visibility - Multiple Forms</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./day3.css">
+  </head>
+  <body>
+    <h1>Password Visibility - Multiple Forms</h1>
+
+    <div class="wrapper">
+      <div class="change-username">
+        <h2>Change Username</h2>
+
+        <p>Enter your username and password to change your username.</p>
+
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" class="input" />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              data-section="change-username"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label for="show-password">
+              <input type="checkbox" name="show-password" id="show-password" />
+              Show password
+            </label>
+          </div>
+
+          <p>
+            <button type="submit">Change Username</button>
+          </p>
+        </form>
+      </div>
+
+      <div class="change-password">
+        <h2>Change Password</h2>
+
+        <p>Enter your current password and new password below.</p>
+
+        <form>
+          <div>
+            <label for="current-password">Current Password</label>
+            <input
+              type="password"
+              name="current-password"
+              id="current-password"
+              data-section="change-password"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label for="new-password">New Password</label>
+            <input
+              type="password"
+              name="new-password"
+              id="new-password"
+              data-section="change-password"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label for="show-passwords">
+              <input
+                type="checkbox"
+                name="show-passwords"
+                id="show-passwords"
+              />
+              Show passwords
+            </label>
+          </div>
+
+          <p>
+            <button type="submit">Change Passwords</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="day3.js">
+    </script>
+  </body>
+</html>

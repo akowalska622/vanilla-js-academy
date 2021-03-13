@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Vanilla JS Academy</title>
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="projects/day1.html">Day 1</a>
-      </li>
-    </ul>
+    <header>
+      Welcome to my Vanilla JS Academy projects gallery. You can find here my solutions for tasks from Vanilla JS Academy by Chris Ferdinandi. This is a a project-based course, the code used in projects is 100% my work, Chris provides only 2-3 minutes theoretical lessons, but projects <b>aren't</b> made in code-along way. Below you can see the gallery of my projects - clicking on the image will take you to the demo. Description for each project is provided. If you want to see the source code, find it on my github. Chris doesn't require styling, so it's all my creative work. I hope you'll enjoy it!
+    </header>
+    <div class="project-gallery">
+      <div class="project-card">
+        <h3>Day 1 - toggle password visibility</h3>
+        <a href="projects/day1/day1.html"><img src="img/day1.png" alt="Day 1 project"></a>
+        <div class="description-toggle">
+          <p>Show project description</p>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet maxime officia illum distinctio commodi repellendus ad facilis nihil iure magnam reprehenderit rem, consectetur, harum molestias fuga nobis cumque quasi!
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="projects/day2/day2.html">Day 2</a></h3>
+      </div>
+      <div class="project-card">
+        <h3><a href="projects/day3/day3.html">Day 3</a></h3>
+      </div>
+    </div>
   </body>
 </html>
