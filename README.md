@@ -1,4 +1,4 @@
-#Vanilla JS Academy
+# Vanilla JS Academy
 
 **Vanilla JS Academy** is a project-based course from Chris Ferdinandi. The code used in projects is 100% mine and it's only my work and effort, Chris provides only 2-3 minutes theoretical lessons, but projects **aren't** made in code-along way.
 
