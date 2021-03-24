@@ -53,6 +53,17 @@ img {
   margin-top: 5rem;
 }
 
+.project {
+  width: 60rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 3rem;
+}
+
+.project p {
+  margin-bottom: 0.3rem;
+}
+
 .project p,
 .project ion-icon {
   display: inline-block;

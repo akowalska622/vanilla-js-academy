@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 19px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://static.politico.com/dims4/default/3e8d2a2/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F8c%2F18%2F7fb9b88e4e588a4cc84bb8da9bbf%2F200613-nyt-getty-773.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 70%;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+li {
+  margin-bottom: 12px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2px 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+h3 {
+  width: 80%;
+  border-bottom: 1px solid white;
+}
+
+h3 {
+  margin-top: 50px;
+}
