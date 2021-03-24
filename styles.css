@@ -60,6 +60,10 @@ img {
   padding-bottom: 3rem;
 }
 
+.project.last {
+  border: 0;
+}
+
 .project p {
   margin-bottom: 0.3rem;
 }
